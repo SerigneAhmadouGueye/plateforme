@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+<div class="container my-5">
+    <div class="row py-5"></div>
+    Modifier une filiere |
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        {{edit_classe_form}}
+        {{edit_classe_form}}
+        <button type="submit">Modifier</button>
+    </form>
+</div>
+{% endblock content %}
+
+ {% endcomment %}
